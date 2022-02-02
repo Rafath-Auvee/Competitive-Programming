@@ -19,6 +19,14 @@ int main()
   {
     cout << (*it) << " ";
   }
+  cout << endl ;
+  // using auto keyword 
+
+  for(auto it2 = v.begin(); it2!=v.end(); it2++)
+  {
+    cout << (*it2) << " ";
+  }
+
   vector<pair<int, int>> v_p = {{1,2}, {2,3}, {3,4}};
   cout << endl ;
   for(pair<int,int> &value : v_p)
@@ -27,4 +35,10 @@ int main()
   }
 
   cout << endl;
+  cout << endl ;
+  // using auto keyword 
+  for(auto &value : v_p)
+    {
+      cout << value.first << " " << value.second << endl;
+    }
 }
